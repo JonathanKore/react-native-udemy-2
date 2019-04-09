@@ -1,3 +1,10 @@
 language: node_js
+
 node_js:
-  - 6
+  - "lts/*"
+
+cache:
+  directories:
+    - node_modules
+
+script: npm run ci
